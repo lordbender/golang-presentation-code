@@ -39,7 +39,7 @@ func SquareMatrixParallel(size int) [][]int {
 	}
 	matrixSquareElapsed := time.Since(matrixSquareStart)
 
-	fmt.Printf("Time to Multiply Matrix %s on length %d\n\n", matrixSquareElapsed, len(c[0]))
+	fmt.Printf("\tAsync Time to Square Matrix: O(n^2) -> %s on %d x %d matrix.\n", matrixSquareElapsed, size, size)
 	return c
 }
 
